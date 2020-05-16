@@ -18,7 +18,7 @@ var app = express()
 
 app.use('/node_modules/', express.static('./node_modules/'))
 app.use('/public/', express.static('./public/'))
-
+//express-art-template默认模板目录是views
 app.engine('html', require('express-art-template'))
 
 // 配置模板引擎和 body-parser 一定要在 app.use(router) 挂载路由之前
